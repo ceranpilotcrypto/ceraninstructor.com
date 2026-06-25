@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>R44Checklist — Privacy Policy</title>
+  <style>
+    body { font-family: -apple-system, sans-serif; max-width: 720px; margin: 48px auto; padding: 0 24px; line-height: 1.7; color: #1a1a1a; }
+    h1 { font-size: 1.8rem; margin-bottom: 4px; }
+    h2 { font-size: 1.1rem; margin-top: 2rem; }
+    p, ul { margin-top: 0.5rem; }
+    li { margin-bottom: 0.4rem; }
+    a { color: #0066cc; }
+    .effective { color: #555; font-size: 0.9rem; margin-bottom: 2rem; }
+  </style>
+</head>
+<body>
+
+<h1>Privacy Policy</h1>
+<p class="effective">Effective date: 2026-06-25</p>
+
+<p>This privacy policy applies to the <strong>R44Checklist</strong> app (hereby referred to as "Application") for mobile devices and Apple Watch, created by <strong>ercanay ceran</strong> (hereby referred to as "Service Provider") as a freemium service. This service is intended for use "AS IS".</p>
+
+<p>R44Checklist is a professional aviation utility application designed for pilots operating the Robinson R44, R44 II, and R44 Cadet helicopters. It provides a comprehensive digital checklist system covering all phases of flight operations, including pre-flight inspection, engine start, run-up, takeoff, cruise, approach, landing, and shutdown, as well as emergency procedures based on the Robinson Helicopter Company Pilot's Operating Handbook.</p>
+
+<h2>Core Features</h2>
+<ul>
+  <li><strong>Flight Checklists.</strong> A complete set of normal and emergency procedure checklists for the R44, R44 II, and R44 Cadet, selectable by aircraft variant. Items can be checked off individually, with support for undo, phase reset, and automatic phase progression.</li>
+  <li><strong>Instructor Mode.</strong> An on-device knowledge assessment tool presenting multiple-choice and procedure-ordering questions drawn from the Robinson R44 POH. All quiz data is stored locally. No quiz results, scores, or usage data are transmitted to external servers.</li>
+  <li><strong>Flight Logging.</strong> Records engine-on and engine-off times to calculate flight duration. Log entries including destination, distance, bearing, wind conditions, and debrief information are stored locally on the user's device. Log entries may be exported as PDF or shared as plain text at the user's discretion using the device's standard sharing features.</li>
+  <li><strong>Navigation Assistance.</strong> Uses the device's GPS to calculate bearing, distance, and estimated time en route to a user-defined destination. Location data is processed entirely on the user's device and is never transmitted to external servers.</li>
+  <li><strong>Weather Information.</strong> Retrieves METAR and TAF reports via a secure Cloudflare proxy server operated by the Service Provider. Only the requested airport identifier is transmitted. Weather data is fetched on demand and is not stored beyond the current session.</li>
+  <li><strong>Offline Maps.</strong> Downloads and stores map tile imagery locally to enable offline map display. Satellite imagery is sourced from NASA and ESRI tile services. When an internet connection is available, map label tiles may be fetched from Stadia Maps (stadiamaps.com) solely for display purposes. No user data is transmitted to Stadia Maps.</li>
+  <li><strong>Navigation Aid Database.</strong> Maintains a local database of airports, heliports, VORs, NDBs, and other navigation aids sourced from the OpenAIP aviation data service, refreshed per AIRAC cycle. Queries to the OpenAIP service transmit only geographic bounding coordinates, not any personal data.</li>
+  <li><strong>Crew Sync.</strong> Allows two pilots to share real-time checklist state, engine timer data, and mission information over a direct peer-to-peer Bluetooth or local WiFi connection using Apple's Multipeer Connectivity framework. No data is routed through external servers. Data is transmitted only between the two participating devices during an active session and only with the explicit consent of both pilots.</li>
+  <li><strong>Apple Watch Integration.</strong> Communicates checklist state and flight data to a paired Apple Watch using Apple's Watch Connectivity framework. No data leaves the user's device pair.</li>
+  <li><strong>Siri and Shortcuts.</strong> Supports Apple Shortcuts and Siri voice commands for opening checklist phases and querying flight data. No data is transmitted to third parties through this integration beyond Apple's standard Siri processing.</li>
+  <li><strong>Barometric Sensor.</strong> Uses the device's built-in barometric altimeter to calculate QNH and density altitude. Sensor data is processed entirely on-device and is never stored or transmitted.</li>
+  <li><strong>In-App Purchases and Subscriptions.</strong> The Application offers optional premium features through a monthly or annual auto-renewing subscription purchased via Apple's App Store. Subscription management, billing, and receipt validation are handled exclusively by Apple Inc. The Service Provider does not collect or store payment information. Transaction metadata is processed by Apple in accordance with <a href="https://www.apple.com/legal/privacy/">Apple's Privacy Policy</a>.</li>
+</ul>
+
+<h2>What information does the Application obtain and how is it used?</h2>
+<p>The Application collects precise GPS location data from your device solely to provide in-app navigation features. This data is never transmitted to external servers and is not stored beyond your current session. All other user data — including flight logs, checklist state, pilot preferences, debrief records, and cached map and navigation data — is stored exclusively on your device.</p>
+<p>The Application does not operate user accounts and does not collect personally identifiable information beyond what you voluntarily enter (such as pilot name and debrief notes). This information is stored locally on your device only.</p>
+
+<h2>Do third parties see and/or have access to information obtained by the Application?</h2>
+<p>The Application makes network requests to the following third-party services solely to provide stated features:</p>
+<ul>
+  <li><strong>Cloudflare (Service Provider proxy)</strong> — weather data retrieval. Only airport identifiers are transmitted.</li>
+  <li><strong>OpenAIP</strong> — navigation aid data. Only geographic coordinates are transmitted.</li>
+  <li><strong>Stadia Maps</strong> — online map label tiles. No user data is transmitted.</li>
+  <li><strong>Apple Inc.</strong> — subscription and in-app purchase processing, Siri integration, Watch Connectivity.</li>
+</ul>
+<p>No personal data, flight logs, location history, or mission information is shared with any third party.</p>
+
+<h2>Opt-Out Rights</h2>
+<p>You can stop all data collection by uninstalling the Application using the standard uninstall processes available on your mobile device or via the App Store. Subscription cancellation is managed through your Apple ID settings.</p>
+
+<h2>Children</h2>
+<p>The Application is not intended for use by children under the age of 13 and is not designed to solicit data from minors. The Service Provider does not knowingly collect personally identifiable information from children. If you believe a child has provided personal information, please contact us at <a href="mailto:R44Checklist@gmail.com">R44Checklist@gmail.com</a>.</p>
+
+<h2>Security</h2>
+<p>All network communications use HTTPS/TLS encryption. Crew Sync peer-to-peer connections use end-to-end encryption provided by Apple's Multipeer Connectivity framework. Sensitive configuration values are obfuscated in the application binary. No user data is stored on external servers.</p>
+
+<h2>Changes</h2>
+<p>This Privacy Policy may be updated from time to time. The Service Provider will notify users of material changes by updating this page. Continued use of the Application constitutes acceptance of any changes.</p>
+
+<h2>Your Consent</h2>
+<p>By using the Application, you consent to the processing of your information as set forth in this Privacy Policy.</p>
+
+<h2>Contact Us</h2>
+<p><a href="mailto:R44Checklist@gmail.com">R44Checklist@gmail.com</a></p>
+
+</body>
+</html>
